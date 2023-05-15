@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var benutzerName: String = ""
+    @State var selGroesse: Int = 1
+    @State var selBenachricht: Int = 1
+    @State var selColor: Color = .blue
+    @State var selTon: Int = 50
+    @State var dateStart: Date = Date()
+    @State var dateEnd: Date = Date()
     var body: some View {
-        CookieView()
-//        FormView()
+ //       CookieView()
+       FormView(benutzerName: $benutzerName, selGroesse: $selGroesse, selBenachricht: $selBenachricht, selColor: $selColor, selTon: $selTon, dateStart: $dateStart, dateEnd: $dateEnd)
+    
     }
 }
 

@@ -15,3 +15,4 @@ struct Swift_PA_SettingsAndCookiesApp: App {
         }
     }
 }
+
